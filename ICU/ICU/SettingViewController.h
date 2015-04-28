@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface SettingViewController : UIViewController
 
 @property (strong, nonatomic) IBOutlet UILabel *languageLabel;
+@property (strong, nonatomic) IBOutlet UILabel *switchLabel;
 @property (strong, nonatomic) IBOutlet UILabel *voiceLabel;
 @property (strong, nonatomic) IBOutlet UIButton *enButton;
 @property (strong, nonatomic) IBOutlet UIButton *esButton;

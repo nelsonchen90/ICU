@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "Language.h"
+#import "Voice.h"
 @interface AppDelegate ()
 
 @end
@@ -16,11 +18,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-//    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,
-//                                                         NSUserDomainMask, YES);
-//    NSString *documentsDirectory = [paths objectAtIndex:0];
-//    NSLog(documentsDirectory);
-    
+// loading userDefaults on Language and voice on/off settings
+    [Language initialize];
+    [Voice initVoice];
     return YES;
 }
 

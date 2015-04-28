@@ -10,7 +10,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import <AudioToolbox/AudioToolbox.h>
 
-@interface MainCategoryCVCell : UICollectionViewCell
+@interface MainCategoryCVCell : UICollectionViewCell <AVAudioPlayerDelegate>
 @property (strong, nonatomic) IBOutlet UIImageView *iconImageView;
 @property (strong, nonatomic) IBOutlet UILabel *categoryName;
 

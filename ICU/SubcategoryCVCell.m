@@ -10,14 +10,28 @@
 
 @implementation SubcategoryCVCell
 
-- (IBAction)playSound:(id)sender {
+- (IBAction)playSound:(id)sender
+{
     NSLog(@"play");
+    
     NSError *error;
     _player = [[AVAudioPlayer alloc] initWithContentsOfURL:_soundFileURL
                                                      error:&error];
-    _player.numberOfLoops = 1;
-    [_player play];
+    
+    if(error){
+        NSLog(@"%@",error);
+    }else
+    {
+        _player.delegate = self;
+//        _player.numberOfLoops = 2;
+        [_player play];
+    }
 }
 
+- (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag
+{
+    //[self stop:nil];
+    _player =nil;
+}
 
 @end

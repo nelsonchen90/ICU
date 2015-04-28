@@ -12,6 +12,7 @@
 
 #import "SubcategoryCVCell.h"
 #import "Language.h"
+#import "Voice.h"
 @interface SubCategoryViewController ()
 
 @end
@@ -124,15 +125,23 @@
     NSString* iconFilePath = [[NSBundle mainBundle] pathForResource:path ofType:@"png"];
     UIImage* image = [UIImage imageWithContentsOfFile:iconFilePath];
     // need to edit according to the path within the json file
-    // sound file
-    NSString* soundPath = [NSString stringWithFormat:@"%@%@",[Language get:_mainCategory.subcategoriesSoundFileDirectory alter:nil],sub.fileName];
-    NSString* soundFilePath = [[NSBundle mainBundle] pathForResource:soundPath ofType:@"mp3"];
-    // change should be completed above
-    
-    [cell.playButton setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"media/icon/play" ofType:@"png"]] forState:UIControlStateNormal];
-    cell.playButton.layer.cornerRadius=cell.playButton.frame.size.width/2;
-    NSURL *soundFileURL = [NSURL fileURLWithPath:soundFilePath];
-    cell.soundFileURL = soundFileURL;
+    BOOL voiceOn=[Voice getVoiceBool];
+    if(voiceOn)
+    {
+        // sound file
+        NSString* soundPath = [NSString stringWithFormat:@"%@%@",[Language get:_mainCategory.subcategoriesSoundFileDirectory alter:nil],sub.fileName];
+        NSString* soundFilePath = [[NSBundle mainBundle] pathForResource:soundPath ofType:@"mp3"];
+        // change should be completed above
+        
+        [cell.playButton setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"media/icon/play" ofType:@"png"]] forState:UIControlStateNormal];
+        cell.playButton.layer.cornerRadius=cell.playButton.frame.size.width/2;
+        NSURL *soundFileURL = [NSURL fileURLWithPath:soundFilePath];
+        cell.soundFileURL = soundFileURL;
+        cell.playButton.hidden=NO;
+    }else
+    {
+        cell.playButton.hidden = YES;
+    }
     
     [cell.iconImageView setImage:image];
     cell.subcategoryName.text = [Language get:sub.subcategoryName alter:nil];
@@ -195,16 +204,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     NSLog(@"%@",segue.identifier);
-    if([segue.identifier isEqualToString:@"clock"])
-    {
-        ClockViewController* clockVC = (ClockViewController*) [segue destinationViewController];
-        //clockVC.mainCategory = selectedCategory;
-    }
-    else if([segue.identifier isEqualToString:@"clock"])
-    {
-        CalendarViewController* calendarVC = (CalendarViewController*) [segue destinationViewController];
-        //clockVC.mainCategory = selectedCategory;
-    }
+
 }
 
 @end

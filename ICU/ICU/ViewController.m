@@ -12,6 +12,7 @@
 #import "MainCategory.h"
 #import "MainCategoryCVCell.h"
 
+#import "Voice.h"
 #import "Language.h"
 @interface ViewController ()
 
@@ -30,7 +31,8 @@
     [self createNavigationalButton];
     self.title=@"AMC";
     self.settingButton.title = [Language get:@"Settings" alter:nil];
-    [Language initialize];
+    
+
 }
 -(void)viewWillAppear:(BOOL)animated
 {
@@ -140,16 +142,24 @@
     cell.categoryName.text = [Language get:thisCategory.categoryName alter:nil];
     // need to edit according to the path within the json file
     // sound file
-    NSString* file = [Language get:thisCategory.soundFile alter:nil];
-    NSString* soundFilePath = [[NSBundle mainBundle] pathForResource:file ofType:@"mp3"];
+    BOOL voiceOn = [Voice getVoiceBool];
+    if(voiceOn)
+    {
+        NSString* file = [Language get:thisCategory.soundFile alter:nil];
+        NSString* soundFilePath = [[NSBundle mainBundle] pathForResource:file ofType:@"mp3"];
+        [cell.playButton setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"media/icon/play" ofType:@"png"]] forState:UIControlStateNormal];
+        cell.playButton.layer.cornerRadius=cell.playButton.frame.size.width/2;
+        NSURL *soundFileURL = [NSURL fileURLWithPath:soundFilePath];
+        cell.soundFileURL = soundFileURL;
+        cell.playButton.hidden=NO;
+    }
+    else{
+        cell.playButton.hidden=YES;
+    }
     // icon file
     NSString* iconFile = [[NSBundle mainBundle] pathForResource:@"media/icon/test" ofType:@"png"];
     // change should be completed above
     
-    [cell.playButton setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"media/icon/play" ofType:@"png"]] forState:UIControlStateNormal];
-    cell.playButton.layer.cornerRadius=cell.playButton.frame.size.width/2;
-    NSURL *soundFileURL = [NSURL fileURLWithPath:soundFilePath];
-    cell.soundFileURL = soundFileURL;
     UIImage* image = [UIImage imageWithContentsOfFile:iconFile];
     [cell.iconImageView setImage:image];
     [cell.layer setBorderWidth:2.0f];

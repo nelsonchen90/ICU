@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+
 #import "ScrollProtocol.h"
 
 @interface ViewController : UICollectionViewController<UICollectionViewDataSource,UICollectionViewDelegate,UIScrollViewDelegate,ScrollProtocol>

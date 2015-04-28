@@ -16,8 +16,7 @@ static NSString *language =@"en";
 +(void)initialize {
     NSUserDefaults* defs = [NSUserDefaults standardUserDefaults];
     NSArray* languages = [defs objectForKey:@"AppleLanguages"];
-    NSUserDefaults* userDefaults = [NSUserDefaults standardUserDefaults];
-    NSString* defaultLanguage = [userDefaults valueForKey:@"Language"];
+    NSString* defaultLanguage = [defs valueForKey:@"Language"];
     if(defaultLanguage)
     {
         [self setLanguage:defaultLanguage];
@@ -42,7 +41,6 @@ static NSString *language =@"en";
 
 +(void)setLanguage:(NSString *)l {
     NSUserDefaults* userDefaults = [NSUserDefaults standardUserDefaults];
-//    NSString* preferenceLanguage = [userDefaults stringForKey:@"Language"];
     [userDefaults setObject:l forKey:@"Language"];
     [userDefaults synchronize];
     

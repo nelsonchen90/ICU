@@ -8,6 +8,7 @@
 
 #import "SettingViewController.h"
 #import "Language.h"
+#import "Voice.h"
 @interface SettingViewController ()
 
 @end
@@ -17,11 +18,24 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self settingLanguages];
+    [self settingVoice];
+    
     // Do any additional setup after loading the view.
 }
 
+-(void)settingVoice
+{
+    BOOL voiceOn = [Voice getVoiceBool];
+    if(voiceOn){
+        _voiceSwitch.on=YES;
+    }else{
+        _voiceSwitch.on=NO;
+    }
+}
 -(void)settingLanguages
 {
+    self.title = [Language get:@"Settings" alter:nil];
+    self.switchLabel.text=[Language get:@"On/Off" alter:nil];
     self.languageLabel.text=[Language get:@"Language" alter:nil];
     self.voiceLabel.text=[Language get:@"Voice" alter:nil];
     if([[Language getCurrentLanguage] isEqualToString:@"en"])
@@ -75,5 +89,12 @@
 
 }
 - (IBAction)voiceSwitchOn:(id)sender {
+    if(_voiceSwitch.on){
+        [Voice setVoiceBool:YES];
+        NSLog(@"voice on");
+    }else{
+        [Voice setVoiceBool:NO];
+        NSLog(@"voice off");
+    }
 }
 @end
