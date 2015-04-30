@@ -20,14 +20,19 @@
 		743B6A641AD5C1AF00F4B1EB /* MainCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 743B6A631AD5C1AF00F4B1EB /* MainCategory.m */; };
 		743B6A661AD5C1DC00F4B1EB /* ICU.json in Resources */ = {isa = PBXBuildFile; fileRef = 743B6A651AD5C1DC00F4B1EB /* ICU.json */; };
 		743B6A691AD5C29000F4B1EB /* SubCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 743B6A681AD5C29000F4B1EB /* SubCategory.m */; };
+		74551F371AF28679008DE4F8 /* UIImage+Resizing.m in Sources */ = {isa = PBXBuildFile; fileRef = 74551F361AF28679008DE4F8 /* UIImage+Resizing.m */; };
+		74551F3D1AF28EFF008DE4F8 /* scaleTrack.png in Resources */ = {isa = PBXBuildFile; fileRef = 74551F3C1AF28EFF008DE4F8 /* scaleTrack.png */; };
+		74551F3F1AF2943B008DE4F8 /* transparentTrack.png in Resources */ = {isa = PBXBuildFile; fileRef = 74551F3E1AF2943B008DE4F8 /* transparentTrack.png */; };
+		74551F411AF29737008DE4F8 /* transparentTrackMax.png in Resources */ = {isa = PBXBuildFile; fileRef = 74551F401AF29737008DE4F8 /* transparentTrackMax.png */; };
+		745B52AA1AF033E100617479 /* CustomeSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 745B52A91AF033E100617479 /* CustomeSlider.m */; };
 		747670561AD8461C006BBBED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 747670541AD8461C006BBBED /* Main.storyboard */; };
 		7479DA1E1AEFE97700A04690 /* Voice.m in Sources */ = {isa = PBXBuildFile; fileRef = 7479DA1D1AEFE97700A04690 /* Voice.m */; };
 		74A6A55E1AE189B4000DF712 /* pain.png in Resources */ = {isa = PBXBuildFile; fileRef = 74A6A55C1AE189B4000DF712 /* pain.png */; };
-		74A6A55F1AE189B4000DF712 /* itch.png in Resources */ = {isa = PBXBuildFile; fileRef = 74A6A55D1AE189B4000DF712 /* itch.png */; };
 		74A6A5641AE18B51000DF712 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 74A6A5621AE18B51000DF712 /* Localizable.strings */; };
 		74A6A5731AE1953F000DF712 /* Language.m in Sources */ = {isa = PBXBuildFile; fileRef = 74A6A5721AE1953F000DF712 /* Language.m */; };
 		74C1AE161AEAE36B00FDADBE /* ClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74C1AE151AEAE36B00FDADBE /* ClockViewController.m */; };
 		74C1AE191AEAE37500FDADBE /* CalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74C1AE181AEAE37500FDADBE /* CalendarViewController.m */; };
+		74CA971F1AF03A2B00BDA8AF /* thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 74CA971E1AF03A2B00BDA8AF /* thumb.png */; };
 		74E3BB181AD0503B00436187 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E3BB171AD0503B00436187 /* main.m */; };
 		74E3BB1B1AD0503B00436187 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E3BB1A1AD0503B00436187 /* AppDelegate.m */; };
 		74E3BB1E1AD0503B00436187 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E3BB1D1AD0503B00436187 /* ViewController.m */; };
@@ -70,11 +75,17 @@
 		743B6A651AD5C1DC00F4B1EB /* ICU.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ICU.json; sourceTree = SOURCE_ROOT; };
 		743B6A671AD5C29000F4B1EB /* SubCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubCategory.h; sourceTree = "<group>"; };
 		743B6A681AD5C29000F4B1EB /* SubCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubCategory.m; sourceTree = "<group>"; };
+		74551F351AF28679008DE4F8 /* UIImage+Resizing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resizing.h"; sourceTree = "<group>"; };
+		74551F361AF28679008DE4F8 /* UIImage+Resizing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resizing.m"; sourceTree = "<group>"; };
+		74551F3C1AF28EFF008DE4F8 /* scaleTrack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scaleTrack.png; sourceTree = "<group>"; };
+		74551F3E1AF2943B008DE4F8 /* transparentTrack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = transparentTrack.png; sourceTree = "<group>"; };
+		74551F401AF29737008DE4F8 /* transparentTrackMax.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = transparentTrackMax.png; sourceTree = "<group>"; };
+		745B52A81AF033E100617479 /* CustomeSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomeSlider.h; sourceTree = "<group>"; };
+		745B52A91AF033E100617479 /* CustomeSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomeSlider.m; sourceTree = "<group>"; };
 		747670551AD8461C006BBBED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ICU/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7479DA1C1AEFE97700A04690 /* Voice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Voice.h; sourceTree = "<group>"; };
 		7479DA1D1AEFE97700A04690 /* Voice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Voice.m; sourceTree = "<group>"; };
 		74A6A55C1AE189B4000DF712 /* pain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pain.png; sourceTree = "<group>"; };
-		74A6A55D1AE189B4000DF712 /* itch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = itch.png; sourceTree = "<group>"; };
 		74A6A5601AE18A57000DF712 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = ICU/es.lproj/Main.strings; sourceTree = "<group>"; };
 		74A6A5611AE18A57000DF712 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		74A6A5631AE18B51000DF712 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -89,6 +100,7 @@
 		74C1AE151AEAE36B00FDADBE /* ClockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockViewController.m; sourceTree = "<group>"; };
 		74C1AE171AEAE37500FDADBE /* CalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarViewController.h; sourceTree = "<group>"; };
 		74C1AE181AEAE37500FDADBE /* CalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarViewController.m; sourceTree = "<group>"; };
+		74CA971E1AF03A2B00BDA8AF /* thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumb.png; sourceTree = "<group>"; };
 		74E3BB121AD0503B00436187 /* ICU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ICU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74E3BB161AD0503B00436187 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74E3BB171AD0503B00436187 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -136,6 +148,8 @@
 				743B6A621AD5C1AF00F4B1EB /* MainCategory.h */,
 				743B6A631AD5C1AF00F4B1EB /* MainCategory.m */,
 				743B6A671AD5C29000F4B1EB /* SubCategory.h */,
+				74551F351AF28679008DE4F8 /* UIImage+Resizing.h */,
+				74551F361AF28679008DE4F8 /* UIImage+Resizing.m */,
 				743B6A681AD5C29000F4B1EB /* SubCategory.m */,
 				7479DA1C1AEFE97700A04690 /* Voice.h */,
 				7479DA1D1AEFE97700A04690 /* Voice.m */,
@@ -173,6 +187,8 @@
 				74FFE44F1AD9EEF7002B5B5E /* MainCategoryCVCell.m */,
 				74FFE4511AD9EF0D002B5B5E /* SubcategoryCVCell.h */,
 				74FFE4521AD9EF0D002B5B5E /* SubcategoryCVCell.m */,
+				745B52A81AF033E100617479 /* CustomeSlider.h */,
+				745B52A91AF033E100617479 /* CustomeSlider.m */,
 			);
 			name = Prototype;
 			sourceTree = "<group>";
@@ -207,7 +223,6 @@
 				74A6A5621AE18B51000DF712 /* Localizable.strings */,
 				747670541AD8461C006BBBED /* Main.storyboard */,
 				74E3BB241AD0503B00436187 /* LaunchScreen.xib */,
-				743B6A651AD5C1DC00F4B1EB /* ICU.json */,
 				74E3BB151AD0503B00436187 /* Supporting Files */,
 			);
 			path = ICU;
@@ -216,16 +231,20 @@
 		74E3BB151AD0503B00436187 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				74551F401AF29737008DE4F8 /* transparentTrackMax.png */,
+				74551F3E1AF2943B008DE4F8 /* transparentTrack.png */,
+				743B6A651AD5C1DC00F4B1EB /* ICU.json */,
+				74551F3C1AF28EFF008DE4F8 /* scaleTrack.png */,
 				607DF3B61AE74B6A00986948 /* sign language */,
-				607DF3B21AE7102E00986948 /* GALLAUDET.ttf */,
 				603AD5921AE2D47300955E6A /* media */,
 				74227DCC1AE02D7B00A35F4B /* backArrow.png */,
 				74227DCD1AE02D7B00A35F4B /* nextArrow.png */,
 				74216F801ADDAC8900A7D567 /* human-muscle-anatomy.jpg */,
+				74A6A55C1AE189B4000DF712 /* pain.png */,
+				74CA971E1AF03A2B00BDA8AF /* thumb.png */,
 				74E3BB161AD0503B00436187 /* Info.plist */,
 				74E3BB171AD0503B00436187 /* main.m */,
-				74A6A55C1AE189B4000DF712 /* pain.png */,
-				74A6A55D1AE189B4000DF712 /* itch.png */,
+				607DF3B21AE7102E00986948 /* GALLAUDET.ttf */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -333,12 +352,15 @@
 				603AD5931AE2D47300955E6A /* media in Resources */,
 				743B6A661AD5C1DC00F4B1EB /* ICU.json in Resources */,
 				74E3BB261AD0503B00436187 /* LaunchScreen.xib in Resources */,
-				74A6A55F1AE189B4000DF712 /* itch.png in Resources */,
+				74551F3D1AF28EFF008DE4F8 /* scaleTrack.png in Resources */,
 				74216F811ADDAC8900A7D567 /* human-muscle-anatomy.jpg in Resources */,
 				74A6A55E1AE189B4000DF712 /* pain.png in Resources */,
+				74551F411AF29737008DE4F8 /* transparentTrackMax.png in Resources */,
 				74A6A5641AE18B51000DF712 /* Localizable.strings in Resources */,
 				74227DD01AE02D7B00A35F4B /* backArrow.png in Resources */,
+				74CA971F1AF03A2B00BDA8AF /* thumb.png in Resources */,
 				607DF3B71AE74B6A00986948 /* sign language in Resources */,
+				74551F3F1AF2943B008DE4F8 /* transparentTrack.png in Resources */,
 				74227DD11AE02D7B00A35F4B /* nextArrow.png in Resources */,
 				747670561AD8461C006BBBED /* Main.storyboard in Resources */,
 				74E3BB231AD0503B00436187 /* Images.xcassets in Resources */,
@@ -365,12 +387,14 @@
 				74A6A5731AE1953F000DF712 /* Language.m in Sources */,
 				603AD5961AE2D73C00955E6A /* TypingViewController.m in Sources */,
 				74216F841ADDAF6C00A7D567 /* ItchAndPainViewController.m in Sources */,
+				74551F371AF28679008DE4F8 /* UIImage+Resizing.m in Sources */,
 				B283FF461AD839040090F086 /* SubCategoryViewController.m in Sources */,
 				74E3BB1E1AD0503B00436187 /* ViewController.m in Sources */,
 				7479DA1E1AEFE97700A04690 /* Voice.m in Sources */,
 				74E3BB1B1AD0503B00436187 /* AppDelegate.m in Sources */,
 				743B6A691AD5C29000F4B1EB /* SubCategory.m in Sources */,
 				74216F7F1ADDAAC700A7D567 /* HumanBodyImageView.m in Sources */,
+				745B52AA1AF033E100617479 /* CustomeSlider.m in Sources */,
 				74E3BB181AD0503B00436187 /* main.m in Sources */,
 				74FFE4531AD9EF0D002B5B5E /* SubcategoryCVCell.m in Sources */,
 				74C1AE191AEAE37500FDADBE /* CalendarViewController.m in Sources */,

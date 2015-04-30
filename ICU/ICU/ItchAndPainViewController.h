@@ -13,7 +13,14 @@
 @property (strong, nonatomic) IBOutlet UISlider *areaSlider;
 @property (strong, nonatomic) IBOutlet UILabel *titleLabel;
 @property (strong, nonatomic) IBOutlet UILabel *areaLabel;
+@property (strong, nonatomic) IBOutlet UIImageView *sliderBackground;
 @property (strong, nonatomic) IBOutlet UISlider *scaleSlider;
+@property (strong, nonatomic) IBOutlet UIImageView *scale5ImageView;
+@property (strong, nonatomic) IBOutlet UIImageView *scale4ImageView;
+@property (strong, nonatomic) IBOutlet UIImageView *scale3ImageView;
+@property (strong, nonatomic) IBOutlet UIImageView *scale2ImageView;
+@property (strong, nonatomic) IBOutlet UIImageView *scale1ImageView;
+
 
 @property MainCategory* mainCategory;
 
