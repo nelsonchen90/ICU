@@ -7,7 +7,7 @@
 //
 
 #import "TypingViewController.h"
-
+#import "BackgroundColor.h"
 @interface TypingViewController (){
     UIView *numView;
     UIView *view;
@@ -23,6 +23,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.textArea.backgroundColor = [BackgroundColor getColor];
+
     // Do any additional setup after loading the view.
     [_segment addTarget:self action:@selector(selected:) forControlEvents:UIControlEventValueChanged];
     numView=[[UIView alloc] initWithFrame:CGRectMake(0, 416, 1024, 352)];

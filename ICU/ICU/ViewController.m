@@ -12,6 +12,7 @@
 #import "MainCategory.h"
 #import "MainCategoryCVCell.h"
 
+#import "BackgroundColor.h"
 #import "Voice.h"
 #import "Language.h"
 @interface ViewController ()
@@ -31,7 +32,7 @@
     [self createNavigationalButton];
     self.title=@"AMC";
     self.settingButton.title = [Language get:@"Settings" alter:nil];
-    
+    self.collectionView.backgroundColor = [BackgroundColor getColor];
 
 }
 -(void)viewWillAppear:(BOOL)animated
@@ -39,6 +40,8 @@
     [super viewWillAppear:animated];
     self.settingButton.title = [Language get:@"Settings" alter:nil];
     [self.collectionView reloadData];
+    self.collectionView.backgroundColor = [BackgroundColor getColor];
+
 }
 
 -(void) createNavigationalButton

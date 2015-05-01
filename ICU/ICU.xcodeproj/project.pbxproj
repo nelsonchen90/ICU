@@ -30,6 +30,14 @@
 		74A6A55E1AE189B4000DF712 /* pain.png in Resources */ = {isa = PBXBuildFile; fileRef = 74A6A55C1AE189B4000DF712 /* pain.png */; };
 		74A6A5641AE18B51000DF712 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 74A6A5621AE18B51000DF712 /* Localizable.strings */; };
 		74A6A5731AE1953F000DF712 /* Language.m in Sources */ = {isa = PBXBuildFile; fileRef = 74A6A5721AE1953F000DF712 /* Language.m */; };
+		74B4EF201AF406AB004CC24E /* FCColorPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B4EF1E1AF406AB004CC24E /* FCColorPickerViewController.m */; };
+		74B4EF241AF40714004CC24E /* FCBrightDarkGradView.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B4EF231AF40714004CC24E /* FCBrightDarkGradView.m */; };
+		74B4EF271AF4072D004CC24E /* FCColorSwatchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B4EF261AF4072D004CC24E /* FCColorSwatchView.m */; };
+		74B4EF2A1AF40781004CC24E /* FCColorPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74B4EF291AF40781004CC24E /* FCColorPickerViewController.xib */; };
+		74B4EF2C1AF40DF3004CC24E /* colormap.png in Resources */ = {isa = PBXBuildFile; fileRef = 74B4EF2B1AF40DF3004CC24E /* colormap.png */; };
+		74B4EF2F1AF40FBF004CC24E /* BackgroundColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B4EF2E1AF40FBF004CC24E /* BackgroundColor.m */; };
+		74B4EF311AF41BF0004CC24E /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 74B4EF301AF41BF0004CC24E /* button.png */; };
+		74BEC4D61AF3044200D1C968 /* reset.png in Resources */ = {isa = PBXBuildFile; fileRef = 74BEC4D51AF3044200D1C968 /* reset.png */; };
 		74C1AE161AEAE36B00FDADBE /* ClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74C1AE151AEAE36B00FDADBE /* ClockViewController.m */; };
 		74C1AE191AEAE37500FDADBE /* CalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74C1AE181AEAE37500FDADBE /* CalendarViewController.m */; };
 		74CA971F1AF03A2B00BDA8AF /* thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 74CA971E1AF03A2B00BDA8AF /* thumb.png */; };
@@ -96,6 +104,18 @@
 		74A6A5741AE196F6000DF712 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = ICU/fr.lproj/Main.strings; sourceTree = "<group>"; };
 		74A6A5751AE196F6000DF712 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		74A6A5761AE196F6000DF712 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		74B4EF1D1AF406AB004CC24E /* FCColorPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCColorPickerViewController.h; sourceTree = "<group>"; };
+		74B4EF1E1AF406AB004CC24E /* FCColorPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCColorPickerViewController.m; sourceTree = "<group>"; };
+		74B4EF221AF40714004CC24E /* FCBrightDarkGradView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCBrightDarkGradView.h; sourceTree = "<group>"; };
+		74B4EF231AF40714004CC24E /* FCBrightDarkGradView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCBrightDarkGradView.m; sourceTree = "<group>"; };
+		74B4EF251AF4072D004CC24E /* FCColorSwatchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCColorSwatchView.h; sourceTree = "<group>"; };
+		74B4EF261AF4072D004CC24E /* FCColorSwatchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCColorSwatchView.m; sourceTree = "<group>"; };
+		74B4EF291AF40781004CC24E /* FCColorPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FCColorPickerViewController.xib; sourceTree = "<group>"; };
+		74B4EF2B1AF40DF3004CC24E /* colormap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colormap.png; sourceTree = "<group>"; };
+		74B4EF2D1AF40FBF004CC24E /* BackgroundColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundColor.h; sourceTree = "<group>"; };
+		74B4EF2E1AF40FBF004CC24E /* BackgroundColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundColor.m; sourceTree = "<group>"; };
+		74B4EF301AF41BF0004CC24E /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
+		74BEC4D51AF3044200D1C968 /* reset.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reset.png; sourceTree = "<group>"; };
 		74C1AE141AEAE36B00FDADBE /* ClockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockViewController.h; sourceTree = "<group>"; };
 		74C1AE151AEAE36B00FDADBE /* ClockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockViewController.m; sourceTree = "<group>"; };
 		74C1AE171AEAE37500FDADBE /* CalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarViewController.h; sourceTree = "<group>"; };
@@ -153,8 +173,25 @@
 				743B6A681AD5C29000F4B1EB /* SubCategory.m */,
 				7479DA1C1AEFE97700A04690 /* Voice.h */,
 				7479DA1D1AEFE97700A04690 /* Voice.m */,
+				74B4EF2D1AF40FBF004CC24E /* BackgroundColor.h */,
+				74B4EF2E1AF40FBF004CC24E /* BackgroundColor.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		74B4EF281AF40737004CC24E /* FCcolorpicker */ = {
+			isa = PBXGroup;
+			children = (
+				74B4EF2B1AF40DF3004CC24E /* colormap.png */,
+				74B4EF1D1AF406AB004CC24E /* FCColorPickerViewController.h */,
+				74B4EF1E1AF406AB004CC24E /* FCColorPickerViewController.m */,
+				74B4EF251AF4072D004CC24E /* FCColorSwatchView.h */,
+				74B4EF261AF4072D004CC24E /* FCColorSwatchView.m */,
+				74B4EF221AF40714004CC24E /* FCBrightDarkGradView.h */,
+				74B4EF231AF40714004CC24E /* FCBrightDarkGradView.m */,
+				74B4EF291AF40781004CC24E /* FCColorPickerViewController.xib */,
+			);
+			name = FCcolorpicker;
 			sourceTree = "<group>";
 		};
 		74C1AE121AEADE1E00FDADBE /* ViewController */ = {
@@ -196,6 +233,7 @@
 		74E3BB091AD0503B00436187 = {
 			isa = PBXGroup;
 			children = (
+				74B4EF301AF41BF0004CC24E /* button.png */,
 				74E3BB141AD0503B00436187 /* ICU */,
 				74E3BB2E1AD0503B00436187 /* ICUTests */,
 				74E3BB131AD0503B00436187 /* Products */,
@@ -214,6 +252,7 @@
 		74E3BB141AD0503B00436187 /* ICU */ = {
 			isa = PBXGroup;
 			children = (
+				74B4EF281AF40737004CC24E /* FCcolorpicker */,
 				74C1AE131AEADE3C00FDADBE /* Prototype */,
 				74C1AE121AEADE1E00FDADBE /* ViewController */,
 				74061DAC1AD70655002FA6C1 /* Model */,
@@ -231,6 +270,7 @@
 		74E3BB151AD0503B00436187 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				74BEC4D51AF3044200D1C968 /* reset.png */,
 				74551F401AF29737008DE4F8 /* transparentTrackMax.png */,
 				74551F3E1AF2943B008DE4F8 /* transparentTrack.png */,
 				743B6A651AD5C1DC00F4B1EB /* ICU.json */,
@@ -349,11 +389,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				607DF3B31AE7102E00986948 /* GALLAUDET.ttf in Resources */,
+				74B4EF311AF41BF0004CC24E /* button.png in Resources */,
 				603AD5931AE2D47300955E6A /* media in Resources */,
 				743B6A661AD5C1DC00F4B1EB /* ICU.json in Resources */,
+				74B4EF2A1AF40781004CC24E /* FCColorPickerViewController.xib in Resources */,
 				74E3BB261AD0503B00436187 /* LaunchScreen.xib in Resources */,
 				74551F3D1AF28EFF008DE4F8 /* scaleTrack.png in Resources */,
 				74216F811ADDAC8900A7D567 /* human-muscle-anatomy.jpg in Resources */,
+				74BEC4D61AF3044200D1C968 /* reset.png in Resources */,
 				74A6A55E1AE189B4000DF712 /* pain.png in Resources */,
 				74551F411AF29737008DE4F8 /* transparentTrackMax.png in Resources */,
 				74A6A5641AE18B51000DF712 /* Localizable.strings in Resources */,
@@ -361,6 +404,7 @@
 				74CA971F1AF03A2B00BDA8AF /* thumb.png in Resources */,
 				607DF3B71AE74B6A00986948 /* sign language in Resources */,
 				74551F3F1AF2943B008DE4F8 /* transparentTrack.png in Resources */,
+				74B4EF2C1AF40DF3004CC24E /* colormap.png in Resources */,
 				74227DD11AE02D7B00A35F4B /* nextArrow.png in Resources */,
 				747670561AD8461C006BBBED /* Main.storyboard in Resources */,
 				74E3BB231AD0503B00436187 /* Images.xcassets in Resources */,
@@ -394,7 +438,11 @@
 				74E3BB1B1AD0503B00436187 /* AppDelegate.m in Sources */,
 				743B6A691AD5C29000F4B1EB /* SubCategory.m in Sources */,
 				74216F7F1ADDAAC700A7D567 /* HumanBodyImageView.m in Sources */,
+				74B4EF271AF4072D004CC24E /* FCColorSwatchView.m in Sources */,
+				74B4EF241AF40714004CC24E /* FCBrightDarkGradView.m in Sources */,
+				74B4EF201AF406AB004CC24E /* FCColorPickerViewController.m in Sources */,
 				745B52AA1AF033E100617479 /* CustomeSlider.m in Sources */,
+				74B4EF2F1AF40FBF004CC24E /* BackgroundColor.m in Sources */,
 				74E3BB181AD0503B00436187 /* main.m in Sources */,
 				74FFE4531AD9EF0D002B5B5E /* SubcategoryCVCell.m in Sources */,
 				74C1AE191AEAE37500FDADBE /* CalendarViewController.m in Sources */,

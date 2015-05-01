@@ -13,6 +13,7 @@
 #import "SubcategoryCVCell.h"
 #import "Language.h"
 #import "Voice.h"
+#import "BackgroundColor.h"
 @interface SubCategoryViewController ()
 
 @end
@@ -25,6 +26,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _SubcategoryCollectionView.backgroundColor = [BackgroundColor getColor];
     self.SubcategoryCollectionView.delegate=self;
     self.SubcategoryCollectionView.dataSource = self;
     [self createNavigationalButton];

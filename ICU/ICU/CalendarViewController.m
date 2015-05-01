@@ -7,7 +7,7 @@
 //
 
 #import "CalendarViewController.h"
-
+#import "BackgroundColor.h"
 @interface CalendarViewController ()
 
 @end
@@ -16,6 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [BackgroundColor getColor];
+
     NSDate *date=[NSDate date];
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"MM-dd-YYYY EEE"];

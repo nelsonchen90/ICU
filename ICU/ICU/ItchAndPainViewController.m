@@ -10,6 +10,7 @@
 #import "HumanBodyImageView.h"
 #import "Language.h"
 #import "UIImage+Resizing.h"
+#import "BackgroundColor.h"
 @interface ItchAndPainViewController ()
 
 @end
@@ -18,6 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [BackgroundColor getColor];
     self.title = [Language get:_mainCategory.categoryName alter:nil];
     CGAffineTransform trans=CGAffineTransformMakeRotation(-M_PI_2);
     _scaleSlider.transform=trans;
@@ -43,23 +45,39 @@
     [_scale4ImageView setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"media/icon/body/4" ofType:@"png"]]];
     [_scale5ImageView setImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"media/icon/body/5" ofType:@"png"]]];
     
+    
+    _imageScrollView.minimumZoomScale = 1.0;
+    _imageScrollView.maximumZoomScale = 4.0;
+    _imageScrollView.contentSize = _bodyImage.frame.size;
+   _imageScrollView.delegate = self;
+    
+    UIImage* resetImage = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle]pathForResource:@"reset" ofType:@"png"]];
+    _resetLabel.text = [Language get:@"reset image" alter:nil];
+    [_resetButton setBackgroundImage:resetImage forState:UIControlStateNormal];
+    
     // Do any additional setup after loading the view.
 }
+
+- (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView
+{
+    return _bodyImage;
+}
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+
+- (IBAction)resetImageZoom:(id)sender {
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:0.25];
+    _imageScrollView.zoomScale = 1.0;
+    [UIView commitAnimations];
 }
-*/
 
 - (IBAction)sliderValueChange:(id)sender
 {

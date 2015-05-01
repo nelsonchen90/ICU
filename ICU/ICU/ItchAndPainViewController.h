@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "MainCategory.h"
-@interface ItchAndPainViewController : UIViewController
+@interface ItchAndPainViewController : UIViewController <UIScrollViewDelegate>
 @property (strong, nonatomic) IBOutlet UIImageView *bodyImage;
 @property (strong, nonatomic) IBOutlet UISlider *areaSlider;
 @property (strong, nonatomic) IBOutlet UILabel *titleLabel;
@@ -20,10 +20,14 @@
 @property (strong, nonatomic) IBOutlet UIImageView *scale3ImageView;
 @property (strong, nonatomic) IBOutlet UIImageView *scale2ImageView;
 @property (strong, nonatomic) IBOutlet UIImageView *scale1ImageView;
+@property (strong, nonatomic) IBOutlet UIScrollView *imageScrollView;
+@property (strong, nonatomic) IBOutlet UIButton *resetButton;
+@property (strong, nonatomic) IBOutlet UILabel *resetLabel;
 
 
 @property MainCategory* mainCategory;
 
+- (IBAction)resetImageZoom:(id)sender;
 
 - (IBAction)sliderValueChange:(id)sender;
 - (IBAction)scaleSliderValueChange:(id)sender;
